@@ -1,0 +1,160 @@
+body{
+    font-family: "幼圆",Arial,sans-serif;
+}
+ul,ol{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.clearfix::before, .clearfix:after{
+    content: "";
+    display: block;
+    height: 0;
+    line-height: 0;
+    visibility: hidden;
+
+    clear: both;
+}
+/*导航栏*/
+.main-title{
+    width: 1000px;
+    position: absolute;
+    left: 50%;
+    margin-left: -500px;
+    top: 5px;
+    z-index: 999;
+}
+.main-title>.f-title{
+    width: 200px;
+    height: 42px;
+    float: left;
+    background-image: url("../images/title-1.png");
+
+}
+.main-title>.r-title{
+    float: right;
+}
+.main-title>.r-title li{
+    float: left;
+}
+.main-title>.r-title a{
+    display: block;
+    width: 80px;
+    height: 42px;
+    color: #fff;
+    font-size: 20px;
+    line-height: 42px;
+    text-align: center;
+    margin-left: 30px;
+    text-decoration: none;
+}
+.main-title>.r-title a:hover{
+    text-decoration: underline;
+}
+
+/*第一画*/
+
+.section1{
+    background-image: url("../images/1.jpg");
+
+}
+.section1>div{
+    position: relative;
+}
+.section1>div>.title{
+    display: block;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    top: 70px;
+    transform: translateX(-50%);
+    font-size: 50px;
+    color: #fff;
+
+}
+.section1>div>.min-title{
+    display: block;
+    height: 20px;
+    position: absolute;
+    left: 50%;
+    top: 130px;
+    transform: translateX(-50%);
+    font-size: 30px;
+    letter-spacing: 5px;
+    color: #fff;
+
+}
+.section1>div>a{
+    text-decoration: none;
+    display: block;
+    height: 30px;
+    padding: 3px 30px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    top: 180px;
+    transform: translateX(-50%);
+    font-size: 20px;
+    line-height: 30px;
+    color: #fff;
+}
+.section1>div>.content-img{
+    width: 818px;
+    height: 427px;
+    position: absolute;
+    left: 50%;
+    top: 230px;
+    /*transform: translateX(-50%);*/
+    margin-left: -409px;
+    background-image: url("../images/content-img.png") ;
+    background-size: 100% 100%;
+}
+@keyframes rotate {
+    from{}
+    to{
+        transform:rotate(-360deg);
+    }
+}
+.section1>div>.content-img{
+    animation: rotate 2s infinite linear;
+}
+
+/*第二画*/
+.section2,.section3,.section4{
+    background-image: url("../images/2.jpg");
+
+}
+.section2>div>.content-img2{
+    width: 900px;
+    height: 593px;
+    margin: 100px auto 0;
+    background-image: url("../images/content-img2.png") ;
+    background-size: 100% 100%;
+}
+.section3{
+}
+.section3>div>.content-img3{
+    display: none;
+    width: 900px;
+    height: 593px;
+    margin: 100px auto 0;
+    background-image: url("../images/content-img3.png") ;
+    background-size: 100% 100%;
+}
+.section4{
+}
+.section4>div>.content-img4{
+    width: 900px;
+    height: 593px;
+    margin: 100px auto 0;
+    background-image: url("../images/content-img4.png") ;
+    background-size: 100% 100%;
+}
+/*设置导航圆点的样式*/
+#fp-nav ul li a span{
+    border-color: #fff;
+}
+#fp-nav ul li a.active span{
+    background-color: #fff;
+}
