@@ -1,20 +1,14 @@
 body{
-    font-family: "幼圆",Arial,sans-serif;
+    font-family: "方正兰亭超细黑简体";
+    margin: 0;
+    padding: 0;
 }
-ul,ol{
+ul{
     list-style: none;
     margin: 0;
     padding: 0;
 }
-.clearfix::before, .clearfix:after{
-    content: "";
-    display: block;
-    height: 0;
-    line-height: 0;
-    visibility: hidden;
 
-    clear: both;
-}
 /*导航栏*/
 .main-title{
     width: 1000px;
